@@ -26,6 +26,7 @@ static const struct vid_pid ingenic_vid_pid[] = {
 	{.vid = 0x601a, .pid = 0x4750,},
 	{.vid = 0x601a, .pid = 0x4760,},
 	{.vid = 0xa108, .pid = 0x4770,},
+	{.vid = 0xa108, .pid = 0x1000,},
 	{ },
 };
 

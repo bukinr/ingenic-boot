@@ -25,29 +25,29 @@ PREFIX ?= /usr/local
 all: lib/libcmd.so bin/basic_cmd_tool bin/fw_cfg_tool bin/stage2_cmd_tool
 
 lib/libcmd.so : force_look
-	@cd source/basic_cmd_lib; make
+	@cd source/basic_cmd_lib; gmake
 	@echo
 
 bin/basic_cmd_tool : force_look
-	@cd source/basic_cmd_tool; make
+	@cd source/basic_cmd_tool; gmake
 	@echo
 
 bin/fw_cfg_tool : force_look
-	@cd source/fw_cfg_tool; make
+	@cd source/fw_cfg_tool; gmake
 	@echo
 
 bin/stage2_cmd_tool : force_look
-	@cd source/stage2_cmd_tool; make
+	@cd source/stage2_cmd_tool; gmake
 	@echo
 
 clean:
-	@cd source/basic_cmd_lib; make clean;
+	@cd source/basic_cmd_lib; gmake clean;
 	@echo
-	@cd source/basic_cmd_tool; make clean;
+	@cd source/basic_cmd_tool; gmake clean;
 	@echo
-	@cd source/fw_cfg_tool; make clean;
+	@cd source/fw_cfg_tool; gmake clean;
 	@echo
-	@cd source/stage2_cmd_tool; make clean;
+	@cd source/stage2_cmd_tool; gmake clean;
 	@echo
 
 force_look :
